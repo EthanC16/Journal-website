@@ -30,6 +30,8 @@ h1 {
     color: black;
 }
 
+
+
 #mainHeader {
     color:brown ;
 }
@@ -45,4 +47,19 @@ img {
     /* border: solid black 3px; */
     
 }
+
+.imageFlex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    img {
+      display: none;
+    }
+  }
+
 
