@@ -1,39 +1,92 @@
 body {
-    background-color: rgba(245, 131, 39, 0.3);
+    background-color: rgba(238, 108, 77, 0.5);
     font-family: Arial, Helvetica, sans-serif;
-    
+    max-width: 960px;
+    margin: auto;
+
 }
 
 h1 {
     text-align: center;
 }
 
-.topnav {
-    display: flex;
-    justify-content: center;
-    background-color: brown;
+/* Navbar container */
+.navbar {
     overflow: hidden;
-    padding: 15px;
-    
-  }
- 
-.topnav a {
-    color:white ;
-    text-decoration: none;
-    padding: 14px 16px;
-    font-size: 20px;
-    text-align: center;
+    background-color: #162521;
+    font-family: Arial;
 }
 
-.topnav a:hover {
-    background-color: beige ;
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a  background color to navbar links on hover (the content open on nav before dropdown */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #32533D;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
     color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a background colour to dropdown links when hovering */
+.dropdown-content a:hover {
+    background-color: #8E518D;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
 
 #mainHeader {
-    color:brown ;
+    color: #162521;
 }
 
 h3 {
@@ -41,11 +94,11 @@ h3 {
 }
 
 img {
-    width: 450px;
+    width: 400px;
     padding: 10px 10px;
     margin: 20px 10px;
     /* border: solid black 3px; */
-    
+
 }
 
 .imageFlex {
@@ -58,8 +111,12 @@ img {
 
 @media screen and (max-width: 600px) {
     img {
-      display: none;
+        display: none;
     }
-  }
+}
 
-
+#boxModel {
+    width: 250px;
+    padding: 0;
+    margin: 0;
+}

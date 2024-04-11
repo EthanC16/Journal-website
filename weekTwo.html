@@ -1,82 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Week 2 of the bootcamp</title>
 </head>
+
 <body>
-<div>
-    <h1>Week 2</h1>
-</div>
     <div>
-        <nav class="topnav">
-            <a href="index.html">HOME</a>
-            <a href="weekOne.html">WEEK 1</a>
-        </nav>
+        <h1>Week 2</h1>
     </div>
-<div>
-    <h2>Week 2's focus is on HTML & CSS</h2>
-    <p>I think this will be a nice week for me, due to having past experience with both HTML and CSS. I think it will be more of a refresher and practice which I think I need.</p>
-</div>
-<div>
-    <h3>(Day 1) Github</h3>
-    <p>This week starts with an introduction to Github and github repositories. I have used Github before for a university website project but I can't really remember much of it. We needed to use a repository to put our code, from the challenges we got set the previous week, online</p>
-</div>
-<div>
-    <h3>JS Objects</h3>
-    <p>I had some time after finishing tasks to get some research done on JavaScript Objects.</p>
-    <p>An example I found online compared JS Objects to a car. In real life, a car is an object. A car has properties like weight and color, and methods like start and stop. All cars have the same properties but the property values differ from car to car. All cars have the same methods, but the methods are performed at different times.</p>
-    <p>Objects are variables, but can contain many values.</p>
-    <p>It is common practice to declare objects with the const keyword.</p>
-</div>
-<div>
-    <h3>Object Methods</h3>
-    <p>Methods are actions that can be performed on objects. They are stored in properties as function definitions.</p>
-    <p><strong>this</strong> is a keyword that refers to an object.</p>
-</div>
-<div>
-    <h2>Day 2 - Databases and employability</h2>
-</div>
-<div>
-    <p>Day 2 began with are first proper session with Paul. We started with an intro to SQL.</p>
-</div>
-<div>
-    <h3>Types of data</h3>
-    <ul>
-        <p>numeric data</p>
-        <li>INT - integer whole numbers</li>
-        <li>FLOAT - floating point</li>
-        <li>DECIMAL - decimal numbers</li>
-    </ul>
-    <ul>
-        <p>string data</p>
-        <li>CHAR</li>
-        <li>VARCHAR</li>
-        <li>DATE - yyyy/mm/dd</li>
-        <li>BOOLEAN - true / false</li>
-    </ul>
-<p>This is something I need to revisit</p>
-</div>
-<div>
-    <h3>Primary Key</h3>
-    <p>In a database, a key is a column or a set of columns that uniquely identify each row in a table. Keys are used to establish tables, enforce data itegrity and provide quick access to data.</p>
-</div>
-<div>
-    <h3>DMS & SQL</h3>
-    <p>DMS stands for database management systems, they are systems used to manage and organise data in a database.</p>
-    <p>SQL is a declerative programming language used to manage and manipulate data stored in relational databases.</p>
-</div>
-<div>
-<h3>Using mycompiler</h3>
-<p>We had a play around with SQL using the website mycompiler. We had a go at creating a table and add/manipulating values stored. At first I had some issues with getting errors back after running it, but eventually I found that I was missing some things such as colons, speech marks or brackets. So I think it's important with this to double check becuase it seems quite easy to miss things out.</p>
-</div>
-<div>
-    <h2>Day 2's employability session</h2>
-</div>
-<div>
-    <p>This session was on the dreaded cover letter. It was also the first time we got split into a quick team call to have a chat with another person about some questions on cover letters.</p>
-</div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Weeks
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="weekOne.html">Week 1</a>
+                <a href="weekTwo.html">Week 2</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Week 2's focus is on HTML & CSS</h2>
+        <p>I think this will be a nice week for me, due to having past experience with both HTML and CSS. I think it
+            will be more of a refresher and practice which I think I need.</p>
+    </div>
+    <div>
+        <h3>(Day 1) Github</h3>
+        <p>This week starts with an introduction to Github and github repositories. I have used Github before for a
+            university website project but I can't really remember much of it. We needed to use a repository to put our
+            code, from the challenges we got set the previous week, online</p>
+    </div>
+    <div>
+        <h3>JS Objects</h3>
+        <p>I had some time after finishing tasks to get some research done on JavaScript Objects.</p>
+        <p>An example I found online compared JS Objects to a car. In real life, a car is an object. A car has
+            properties like weight and color, and methods like start and stop. All cars have the same properties but the
+            property values differ from car to car. All cars have the same methods, but the methods are performed at
+            different times.</p>
+        <p>Objects are variables, but can contain many values.</p>
+        <p>It is common practice to declare objects with the const keyword.</p>
+    </div>
+    <div>
+        <h3>Object Methods</h3>
+        <p>Methods are actions that can be performed on objects. They are stored in properties as function definitions.
+        </p>
+        <p><strong>this</strong> is a keyword that refers to an object.</p>
+    </div>
+    <div>
+        <h2>Day 2 - Databases and employability</h2>
+    </div>
+    <div>
+        <p>Day 2 began with are first proper session with Paul. We started with an intro to SQL.</p>
+    </div>
+    <div>
+        <h3>Types of data</h3>
+        <ul>
+            <p>numeric data</p>
+            <li>INT - integer whole numbers</li>
+            <li>FLOAT - floating point</li>
+            <li>DECIMAL - decimal numbers</li>
+        </ul>
+        <ul>
+            <p>string data</p>
+            <li>CHAR</li>
+            <li>VARCHAR</li>
+            <li>DATE - yyyy/mm/dd</li>
+            <li>BOOLEAN - true / false</li>
+        </ul>
+        <p>This is something I need to revisit</p>
+    </div>
+    <div>
+        <h3>Primary Key</h3>
+        <p>In a database, a key is a column or a set of columns that uniquely identify each row in a table. Keys are
+            used to establish tables, enforce data itegrity and provide quick access to data.</p>
+    </div>
+    <div>
+        <h3>DMS & SQL</h3>
+        <p>DMS stands for database management systems, they are systems used to manage and organise data in a database.
+        </p>
+        <p>SQL is a declerative programming language used to manage and manipulate data stored in relational databases.
+        </p>
+    </div>
+    <div>
+        <h3>Using mycompiler</h3>
+        <p>We had a play around with SQL using the website mycompiler. We had a go at creating a table and
+            add/manipulating values stored. At first I had some issues with getting errors back after running it, but
+            eventually I found that I was missing some things such as colons, speech marks or brackets. So I think it's
+            important with this to double check becuase it seems quite easy to miss things out.</p>
+    </div>
+    <div>
+        <h2>Day 2's employability session</h2>
+    </div>
+    <div>
+        <p>This session was on the dreaded cover letter. It was also the first time we got split into a quick team call
+            to have a chat with another person about some questions on cover letters.</p>
+    </div>
+    <div>
+        <p>We spent time identifying the ways in which cover letters are used, and are useful</p>
+        <ul>
+            <li>Opportunity to show personality</li>
+            <li>Demonstrate suitability</li>
+            <li>Showcase passion for the industry/role</li>
+            <li>Build a relationship with potential employers</li>
+            <li>Showcase writing skills</li>
+            <li>Demonstrate ability to follow instructions</li>
+        </ul>
+    </div>
+    <div>
+        <h2>Day 3</h2>
+    </div>
+    <div>
+        <h3>HTML Attributes</h3>
+        <p>Day 3 began with us looking at HTML Attributes and getting on with some more HTML coding.</p>
+    </div>
+    <div>
+        <p>HTML Attributes provide additional information about HTML elements.</p>
+        <p>These can be attributes such as:</p>
+        <ul>
+            <li>src - specifies the path to the image displayed</li>
+            <li>alt - specifies alternate text for an image</li>
+            <li>style - used to add styles to an element</li>
+        </ul>
+        <p>I learnt an attribute I haven't used before. This being target, which is used to send a link to a new page.
+            An example of it being used it; a href="link.com" target="_blank"</p>
+    </div>
+    <div>
+        <h3>Journal Task</h3>
+        <p>We got set the journal wbesite task, requiring us to create a website for you to use to write journal
+            entries. The website must be appropriately styled throughout, link to new html files / pages and the content
+            should be a journal of how your week has been. This is the website you are seeing now.</p>
+    </div>
+    <div>
+        <h3>CSS Intro</h3>
+        <p>I've had some experience with CSS, just like html, so this intro was just remember what I already know.</p>
+    </div>
+    <div>
+        <p>Using external stylesheets (which is the most common method) requires linking them in the head tag.<br> For
+            this we use link rel="stylesheet" href="style.css".</p>
+        <p>The CSS box model is a box that wraps around every HTML element. It consists of: content, padding, borders
+            and margins.</p>
+        <figure>
+            <img src="boxModel.png" alt="the css box model" id="boxModel">
+            <figcaption>An illustration of the CSS box model</figcaption>
+        </figure>
+    </div>
+    <div>
+        <h2>Day 4 - Databases</h2>
+    </div>
+    <div>
+        <p>With Paul not being available for today's sessions we had to work through some set tasks on SQL and
+            Databases.</p>
+        <p>Our learning objectives consisted of:</p>
+        <ul>
+            <li>SELECT...WHERE</li>
+            <li>Comparison Operators</li>
+            <li>AND, OR and NOT</li>
+            <li>LIKE and use of wildcards</li>
+            <li>IS NULL, IS NOT NULL</li>
+            <li>BETWEEN</li>
+            <li>COUNT, AVG, SUM</li>
+            <li>ORDER BY</li>
+        </ul>
+    </div>
+    <div>
+        <p>Some examples of the SQL code I worked through in the morning.</p>
+        <p>To get all data about Games with a minimum player of 1: <br>SELECT * FROM Games <br>WHERE MinPlayer > 1</p>
+        <p>Name and price of all games with a rating of at least 4: <br>SELECT GameTitle, Price FROM Games <br> WHERE Rating >= 4</p>
+    </div>
+    <div>
+        <p>We spent the rest of the day working through a Databases task list, which required us to store specific types of data and then access pieces using SQL queries. I actually found this quite fun and also in some way satisfying. I enjoyed some of the problem solving that came with getting a couple of different errors.</p>
+    </div>
 </body>
+
 </html>
