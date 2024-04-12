@@ -1,5 +1,7 @@
 body {
-    background-color: rgba(238, 108, 77, 0.5);
+    /* The demical at the end of the rgba changes the opacity levels for the background colour*/
+    /* background-color: rgba(238, 108, 77, 0.5); */
+    background-color: #CCDDB7;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 960px;
     margin: auto;
@@ -42,9 +44,7 @@ h1 {
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    /* Important for vertical align on mobile phones */
     margin: 0;
-    /* Important for vertical align on mobile phones */
 }
 
 /* Add a  background color to navbar links on hover (the content open on nav before dropdown */
@@ -59,7 +59,6 @@ h1 {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
